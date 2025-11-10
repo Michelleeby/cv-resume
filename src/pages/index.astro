@@ -1,0 +1,93 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import JobEntry from '../components/JobEntry.astro';
+import CodeSample from '../components/CodeSample.astro';
+import SkillsSummaryCloud from '../components/SkillsSummaryCloud.astro';
+
+const industryExperienceEntries = (await getCollection('industryExperience'))
+    .sort((a, b) => a.data.sortOrder - b.data.sortOrder);
+const codeSampleEntries = (await getCollection('codeSample'))
+    .sort((a, b) => a.data.sortOrder - b.data.sortOrder);
+
+// Get all skills from experience, resulting in an array of arrays
+const allIndustryExperienceSkills = industryExperienceEntries.flatMap(entry => entry.data.skillsList);
+// Get all skills from projects
+const allCodeSampleSkills = codeSampleEntries.flatMap(entry => entry.data.skillsList);
+
+// Combine them into one giant array
+const allSkills = [...allIndustryExperienceSkills, ...allCodeSampleSkills];
+
+// Use a Set to get only unique skills, then spread back into an array
+const uniqueSkills = [...new Set(allSkills)];
+
+// Sort the unique skills alphabetically
+const uniqueSortedSkills = uniqueSkills.sort();
+---
+
+<!-- 
+  Use the Layout component as the wrapper.
+  Pass in the title for the browser tab.
+-->
+<Layout title="Michelle Byrnes | Staff Software Engineer">
+	
+	<!-- 
+	  These <section> tags are the containers for our resume content.
+	  Their 'id' attributes MUST match the 'href' values in Navigation.astro
+	  for the smooth-scrolling links to work.
+	-->
+
+	<!-- The Header/Home component will go here -->
+	<section id="home" class="min-h-screen pt-16">
+		<Header />
+	</section>
+
+	<!-- The Experience components will go here -->
+	<section id="experience" class="min-h-screen pt-16">
+		<h2 class="text-3xl font-bold">Industry Experience</h2>
+		<div class="mt-8">
+			{/* Loop over the experience entries.
+			  - We 'await entry.render()' to get the HTML content.
+			  - We pass the frontmatter data ({...entry.data}) as props.
+			  - We pass the rendered <Content /> into the component's <slot />.
+			*/}
+			{industryExperienceEntries.map(async (entry) => {
+				const { Content } = await entry.render();
+				return (
+					<JobEntry {...entry.data}>
+						<Content />
+					</JobEntry>
+				);
+			})}
+		</div>
+	</section>
+
+	<!-- The Project components will go here -->
+	<section id="projects" class="min-h-screen pt-16">
+		<h2 class="text-3xl font-bold">Code Samples</h2>
+		<div class="mt-8">
+			{/* 6. Repeat the same pattern for the project entries */}
+			{codeSampleEntries.map(async (entry) => {
+				const { Content } = await entry.render();
+				return (
+					<CodeSample {...entry.data}>
+						<Content />
+					</CodeSample>
+				);
+			})}
+		</div>
+	</section>
+
+	<!-- The Skills Summary component will go here -->
+	<section id="skills" class="py-16 pb-32">
+		<!-- Updated heading -->
+		<h2 class="text-3xl font-bold">Skills Summary</h2>
+		
+		<!-- Add the new component and pass in the sorted skills list -->
+		<div class="mt-12">
+			<SkillsSummaryCloud skills={uniqueSortedSkills} />
+		</div>
+	</section>
+
+</Layout>
