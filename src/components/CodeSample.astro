@@ -1,0 +1,32 @@
+---
+export interface Props {
+    title: string;
+    skillsList: string[];
+    url: string;
+}
+const { title, skillsList, url } = Astro.props;
+---
+
+<article class="py-8 border-b border-gray-200 last:border-b-0 dark:border-gray-700">
+    <header>
+        <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
+        <a href={url} class="text-blue-500 dark:text-blue-400 hover:text-blue-700">View on GitHub</a>
+    </header>
+
+    <div class="mt-2 prose prose-lg prose-blue max-w-none dark:prose-invert">
+        <slot />
+    </div>
+
+    <div class="mt-6">
+        <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+            Skills, Tools, and Stacks:
+        </h4>
+        <div class="flex flex-wrap gap-2">
+            {skillsList.map(skill => (
+                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full shadow-sm dark:bg-gray-800 dark:text-gray-200">
+                    {skill}
+                </span>
+            ))}
+        </div>
+    </div>
+</article>
