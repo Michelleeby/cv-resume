@@ -1,6 +1,6 @@
 {
 	"main": "dist/_worker.js/index.js",
-	"name": "michelleeby",
+	"name": "cv-resume",
   "compatibility_date": "2025-11-10",
   "compatibility_flags": [
     "nodejs_compat",
