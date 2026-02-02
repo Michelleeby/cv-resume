@@ -1,13 +1,13 @@
 ---
-title: "Staff Software Engineer, Professional Services - WordPressVIP"
+title: "Staff Software Engineer"
 company: "Automattic"
 dates: "December 2023 - Present"
-skillsList: [ "Monolithic Architectures", "Microservice Architectures", "End-to-End Project Ownership", "Navigating Technical & Product Ambiguity", "System Abstraction & Design", "Cross-Functional Communication", "Developer Tooling & Automation", "Internal Process Improvement", "Al Pair Programming", "Web Application Frameworks", "Web APIs", "Content Management Systems (WordPress)", "Containerized Environments", "Application Development Cycles", "Project Management", "Writing and Delivering Project Proposals", "Inferring Project Requirements from Peers and Customers", "Modeling and Prototyping", "Docker", "New Relic", "Grafana Cloud", "k6 load testing", "Cursor", "VS Code", "Linear", "Slack", "Figma", "mysql", "PHP", "JavaScript", "Kubernetes (kubectl)", "ExpressJS", "React", "NodeJS", "Elastic", "Logstash", "Kibana" ]
+skillsList: [ "PHP","React","Node.js","Kubernetes","Docker","New Relic","k6","Grafana Cloud","MySQL","Elastic/Logstash/Kibana (ELK)" ]
 sortOrder: 1
 ---
 
-* Pitched, built, documented, and maintained our Professional Services internal engineering tooling that empowers our engineers as well as our non-technical team members to schedule tests and collect performance stats on any of our customers, automating an otherwise manual set of tasks. What used to take hours, is now accomplished in under a minute.  
-* Led performance improvement engagements for our platform’s largest customers that have reduced their origin application’s average page response times by margins of 12% to 24%, leveraging performance profiling and analytics tools like New Relic, and designing and running large scale k6 load tests on Grafana Cloud.  
-* Prevented application down-time for many large customers, like NASA. I analyzed and discovered a critical bug in their application that would have otherwise brought the site down during the [2024 Total Solar Eclipse](https://science.nasa.gov/eclipses/future-eclipses/eclipse-2024/).  
-* Designed, developed, and executed [hackathons](https://en.wikipedia.org/wiki/Hackathon) for some of our platform’s largest customers. These are onsite engagements with the customer that have led to adoptions of our platform’s tooling or AOV expansions.  
-* Discovered an improved caching strategy for one of our products, [Remote Data Blocks](https://github.com/Automattic/remote-data-blocks/pull/544), that reduced page response times by 34%, while also reducing our infrastructure costs for all of our hosted customers using it.
+* Designed and developed a PHP and React based internal CLI and dashboard application that automates performance testing and telemetry collection. Reduced workflow execution time from hours to \<60 seconds, enabling engineering and non-technical teams to self-serve complex diagnostic tasks.  
+* Led performance initiatives that have reduced origin latency by margins of 12% to 24% across high traffic deployments. Implemented New Relic profiling and k6 Grafana Cloud distributed load testing to validate the solutions scale.  
+* Conducted critical reliability analysis for enterprise-grade deployments (including NASA). Identified and patched a critical bug that would have caused application downtime during the 2024 Total Solar Eclipse traffic spike.  
+* Led rapid prototyping initiatives for enterprise partners, architecting proof-of-concept solutions that validated platform capabilities. These technical, onsite deep-dives directly drove the successful integration of Gutenberg Blocks into client production environments.  
+* Engineered a novel caching strategy for [Remote Data Blocks](https://github.com/Automattic/remote-data-blocks/pull/544) that reduced page response times by 34%, decreasing our global  infrastructure costs for the hosted fleet.

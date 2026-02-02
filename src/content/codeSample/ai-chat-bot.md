@@ -1,6 +1,6 @@
 ---
 title: "AI Chat Bot"
-skillsList: [ "token rate-limiting", "Al chat APIs (OpenAl)", "Python", "openai", "JavaScript" ]
+skillsList: [ "Python", "OpenAI API", "JavaScript", "Byte Pair Encoding (BPE)" ]
 url: "https://github.com/Michelleeby/pAIr"
 sortOrder: 3
 ---

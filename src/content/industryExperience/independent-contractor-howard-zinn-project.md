@@ -2,7 +2,7 @@
 title: "Independent Contractor, Howard Zinn Project"
 company: "Teaching for Change, Washington DC"
 dates: "November 2021"
-skillsList: [ "Cross-Functional Communication", "Developer Tooling & Automation", "Internal Process Improvement", "Web Application Frameworks", "Web APIs", "Content Management Systems (WordPress)", "Data Types", "Inferring Project Requirements from Peers and Customers", "Modeling and Prototyping", "Technical Training & Writing", "Project Management", "mysql", "PHP", "JavaScript" ]
+skillsList: [ "WordPress", "PHP", "JavaScript", "MySQL" ]
 sortOrder: 5
 ---
 

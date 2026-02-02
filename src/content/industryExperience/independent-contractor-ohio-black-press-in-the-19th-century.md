@@ -2,7 +2,7 @@
 title: "Independent Contractor, Ohio Black Press in the 19th-Century"
 company: "Lorain County Community College, OH"
 dates: "December 2021"
-skillsList: [ "Cross-Functional Communication", "Developer Tooling & Automation", "Internal Process Improvement", "Web Application Frameworks", "Web APIs", "Content Management Systems (Omeka S)", "Data Types", "Inferring Project Requirements from Peers and Customers", "Modeling and Prototyping", "Technical Training & Writing", "Project Management", "mysql", "PHP", "JavaScript" ]
+skillsList: [ "PHP", "JavaScript", "MySQL", "Omeka S" ]
 sortOrder: 4
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Pokémon Decompiled"
-skillsList: [ "C", "C++", "Video Game Development", "Game Boy Advance development", "reverse engineering", "Cursor", "VS Code", "GitHub", "GitHub Actions", "optimizing GitHub Action builds with caching" ]
+skillsList: [ "C", "C++", "Game Boy Advance Architecture", "GitHub Actions (Caching/CI)" ]
 url: "https://github.com/Michelleeby/pokeemerald/tree/trunk"
 sortOrder: 1
 ---

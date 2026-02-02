@@ -1,10 +1,11 @@
 ---
-title: "Software Engineer, Support - WordPressVIP"
+title: "Software Engineer"
 company: "Automattic"
 dates: "May 2022 - December 2022"
-skillsList: [ "Cross-Functional Communication", "Developer Tooling & Automation", "Internal Process Improvement", "Al Pair Programming", "Web Application Frameworks", "Web APIs", "Content Management Systems (WordPress)", "Containerized Environments", "Application Development Cycles", "Real Time Application Monitoring", "Engineer On-call", "New Relic", "Zendesk", "Cursor", "Linear", "Slack", "mysql", "PHP", "JavaScript", "Bash", "Linux", "nginx", "Kubernetes (kubectl)", "ExpressJS", "React", "NodeJS", "Elastic", "Logstash", "Kibana" ]
+skillsList: [ "Kubernetes", "PHP", "MySQL", "New Relic", "Elasticsearch", "Linux", "Shell", "Nginx", "Node.js" ]
 sortOrder: 3
 ---
 
-* Owned, organized, actively communicated on, and ultimately solved many long running customer tickets that had previously been considered stuck.   
-* Saved a large AOV customer’s sentiment by proactively monitoring their site during a critical business event, communicating often with the account team and the customer about site health.
+* Acted as a technical lead for complex escalations, debugging distributed system failures across Kubernetes, PHP, and SQL layers that were unsolvable by tier-1 and tier-2 teams.  
+* Managed high-availability monitoring for enterprise clusters. Executed real-time incident response and root cause analysis for distributed systems using Kubernetes, New Relic, and Elasticsearch.   
+* Implemented proactive site health monitoring for top-tier deployments, preempting failures before they impacted service availability during critical business events.

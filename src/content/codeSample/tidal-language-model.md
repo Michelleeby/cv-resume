@@ -1,6 +1,6 @@
 ---
 title: "Tidal Language Model"
-skillsList: [ "Deep Learning Techniques", "NLP Training Loop Optimizations", "Multi-Threaded Architectures", "Pytorch", "Sklearn", "Tensorflow", "Wandb", "Cursor", "GitHub", "Python" ]
+skillsList: [ "Python", "PyTorch", "TensorFlow", "Scikit-learn", "WandB", "Multi-threaded Architectures" ]
 url: "https://github.com/Michelleeby/tidal-language-model/tree/main"
 sortOrder: 2
 ---

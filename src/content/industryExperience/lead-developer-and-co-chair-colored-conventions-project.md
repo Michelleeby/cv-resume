@@ -2,7 +2,7 @@
 title: "Lead Developer & Co-Chair, - Colored Conventions Project"
 company: "Penn State University, Pattee Library"
 dates: "August 2016 - May 2022"
-skillsList: [ "Project Co-Chair", "Engineering Team Lead", "End-to-End Project Ownership", "Navigating Technical & Product Ambiguity", "System Abstraction & Design", "Cross-Functional Communication", "Developer Tooling & Automation", "Internal Process Improvement", "Web Application Frameworks", "Web APIs", "Content Management Systems (WordPress and Omeka S)", "Data Types", "Inferring Project Requirements from Peers and Customers", "Modeling and Prototyping", "Technical Training & Writing", "Project Management", "Web Page Analytics Monitoring", "VS Code", "Slack", "mysql", "Solr", "Elasticsearch", "PHP", "Ruby", "Ruby on Rails", "JavaScript", "Bash", "Linux", "Apache" ]
+skillsList: [ "PHP", "Ruby on Rails", "Solr", "Elasticsearch", "WordPress", "Omeka S", "Linux", "Apache" ]
 sortOrder: 6
 ---
 
