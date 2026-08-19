@@ -1,8 +1,13 @@
 ---
 title: "Tidal Language Model"
-skillsList: [ "Python", "PyTorch", "TensorFlow", "Scikit-learn", "WandB", "Multi-threaded Architectures" ]
-url: "https://github.com/Michelleeby/tidal-language-model/tree/main"
-sortOrder: 2
+skillsList: [ "Python", "PyTorch", "TypeScript", "React", "Fastify", "Redis", "SSE", "MCP", "Experiment Orchestration", "Model Evaluation" ]
+url: "https://github.com/Michelleeby/tidal-language-model"
+sortOrder: 1
 ---
 
-My independent research into a novel physics based, bio-inspired language model. Leverages gradient accumulation, and multithreading to keep the training loop fast.
+An independent research platform for studying adaptive computation in language models.
+
+* Built a roughly 30.6-million-parameter gated Transformer in PyTorch with external PPO-controlled modulation and input-dependent per-token gates.
+* Built the surrounding research platform with Fastify, React, Redis, SSE streams, background orchestration, local and remote GPU execution, checkpoint management, generation comparison, and exportable reports.
+* Ran three controlled RL-gating experiments that consistently underperformed neutral gating. Traced the failure to the constrained action space, documented the negative result, and changed the research direction.
+* Implemented input-dependent gates with 0.01% parameter overhead and pre-registered quality, sparsity, and adaptivity criteria. Added an MCP interface with a lazy disk cache for AI-assisted experiment analysis.

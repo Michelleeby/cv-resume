@@ -6,6 +6,6 @@ skillsList: [ "PHP", "Node.js", "React", "Shell", "Kubernetes", "Nginx", "MySQL"
 sortOrder: 2
 ---
 
-* Spearheaded a cross-functional initiative to refactor internal command-line utilities into a user-facing product. This self-service model eliminated 37% of manual intervention requests annually.  
-* Invented internal tools that reduced time to delivery by 70% for rote database operations.  
-* Interviewed stakeholders to identify system friction points, translating qualitative feedback into technical requirements for the internal tooling roadmap.
+* Led a cross-functional effort to turn internal command-line utilities into a user-facing self-service product, eliminating 37% of annual manual intervention requests.
+* Built guarded automation for routine database operations, reducing delivery time by 70% while keeping destructive actions constrained and reviewable.
+* Interviewed engineers and operational stakeholders, translated recurring friction into product requirements, and used those findings to shape the tooling roadmap.

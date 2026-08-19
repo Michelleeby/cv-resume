@@ -1,46 +1,47 @@
-# Astro Starter Kit: Basics
+# michelleeby.com
+
+Source for [michelleeby.com](https://michelleeby.com), Michelle Byrnes’s professional portfolio. The site presents professional experience first, followed by independent research, open-source engineering, community work, and technical skills.
+
+## Stack
+
+- Astro 5
+- Tailwind CSS 4
+- Cloudflare Workers
+
+## Development
+
+Install dependencies and start the local development server:
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Create and preview a production build:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── 
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```sh
+npm run build
+npm run preview
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Run Astro commands directly through the package script:
 
-## 🧞 Commands
+```sh
+npm run astro -- --help
+```
 
-All commands are run from the root of the project, from a terminal:
+## Content
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Portfolio content lives under `src/content/`:
 
-## 👀 Want to learn more?
+- `industryExperience/` contains professional roles.
+- `codeSample/` contains independent research and open-source projects.
+- `community/` contains volunteer and outreach work.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Each collection is validated in `src/content.config.mjs` and ordered through its `sortOrder` field. Skills from all collections are combined into the generated skills summary.
+
+## Deployment
+
+The Astro Cloudflare adapter builds the site for Cloudflare Workers. Deployment settings live in `wrangler.jsonc`.
+
+This repository contains the public portfolio source. It does not contain private application materials or internal business documentation.

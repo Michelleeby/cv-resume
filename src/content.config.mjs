@@ -23,7 +23,19 @@ const codeSampleCollection = defineCollection({
     }),
 });
 
+const communityCollection = defineCollection({
+    type: 'content',
+    schema: z.object({
+        title: z.string(),
+        company: z.string(),
+        dates: z.string(),
+        skillsList: z.array(z.string()),
+        sortOrder: z.number(),
+    }),
+});
+
 export const collections = {
     'industryExperience': industryExperienceCollection,
     'codeSample': codeSampleCollection,
+    'community': communityCollection,
 };
